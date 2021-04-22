@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev" : "concurrently \"npx json-server --watch data/db.json --port 8000\" \"react-scripts start\""  
+    "dev": "concurrently \"npx json-server --watch data/db.json --port 8000\" \"react-scripts start\""
   },
   "eslintConfig": {
     "extends": [
