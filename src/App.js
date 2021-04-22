@@ -3,6 +3,7 @@ import Navbar from './component/Navbar';
 import Home from './component/Home';
 import Create from './component/Create';
 import PostDetails from './component/PostDetails';
+import NotFound from './component/NotFound';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
             </Route>
             <Route path="/posts/:id">
               <PostDetails></PostDetails>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
         </div>

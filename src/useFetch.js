@@ -1,5 +1,5 @@
 import {useState , useEffect } from 'react';
-const useFetch = (url) => {
+const useFetch = (url,requestOptions) => {
     const [data,setData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [isError, setIsError] = useState(null);
@@ -7,11 +7,11 @@ const useFetch = (url) => {
     useEffect(() => {
         const abortFetch = new AbortController();
 
-        let requestOptions = {
+            let requestOptions = {
             method: 'GET',
             redirect: 'follow'
           };
-          fetch(url, requestOptions,{signal : abortFetch.signal})
+          fetch(url,{signal : abortFetch.signal},requestOptions)
             .then(response => {
                 if(!response.ok){
                     throw Error("Could not Fetch data");
@@ -27,12 +27,13 @@ const useFetch = (url) => {
                 if(e.name==='AbortError'){
                     console.log("Fetch Aborted");
                 }else{
+                    console.log(e.message);
                     setIsError(e.message);
                 }
             });
 
         return () => abortFetch.abort();
-    }, [url])
+    }, [url,requestOptions])
 
     return { data , isLoading, isError};
 }

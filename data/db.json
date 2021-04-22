@@ -1,12 +1,6 @@
 {
   "posts": [
     {
-      "title": "Post 1",
-      "body": "Hello World",
-      "author": "bruce",
-      "id": 0
-    },
-    {
       "title": "Post 2",
       "body": "This is just a post",
       "author": "bruce",
@@ -29,6 +23,18 @@
       "body": "Food is greate",
       "author": "bruce",
       "id": 4
+    },
+    {
+      "title": "My Life",
+      "body": "Posted through Form ",
+      "author": "bruce",
+      "id": 5
+    },
+    {
+      "title": "Last One",
+      "body": "Testing Redirects",
+      "author": "Anonymous",
+      "id": 9
     }
   ]
 }

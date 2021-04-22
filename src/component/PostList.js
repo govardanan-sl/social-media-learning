@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom';
-const PostList = ({posts,title,handleDelete}) =>{
+const PostList = ({posts,title}) =>{
    // const posts=props.posts;
+
     return (  
         <div className= "post-list"> 
             <h2>{title}</h2>
@@ -9,8 +10,7 @@ const PostList = ({posts,title,handleDelete}) =>{
                 <Link to={`/posts/${post.id}`}>
                  <h2>{post.title}</h2>
                  <p>{post.body}</p>
-                 <p>by {post.author}</p>
-                 <button>Delete Post</button> 
+                 <p>by {post.author}</p> 
                 </Link>
             </div>
             ))}
