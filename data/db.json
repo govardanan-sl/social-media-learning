@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "title": "Post 1",
+      "body": "Hello World",
+      "author": "bruce",
+      "id": 0
+    },
+    {
+      "title": "Post 2",
+      "body": "This is just a post",
+      "author": "bruce",
+      "id": 1
+    },
+    {
+      "title": "Post 2",
+      "body": "Just an another Post",
+      "author": "bruce",
+      "id": 2
+    },
+    {
+      "title": "Another User",
+      "body": "Just an another Post",
+      "author": "Govardanan",
+      "id": 3
+    },
+    {
+      "title": "Food",
+      "body": "Food is greate",
+      "author": "bruce",
+      "id": 4
+    }
+  ]
+}

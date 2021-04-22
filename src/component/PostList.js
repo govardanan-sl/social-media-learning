@@ -8,7 +8,7 @@ const PostList = ({posts,title,handleDelete}) =>{
                <h2>{post.title}</h2>
                <p>{post.body}</p>
                <p>by {post.author}</p>
-               <button onClick={() => handleDelete(post.id)}>Delete Post</button> 
+               <button>Delete Post</button> 
             </div>
             ))}
         </div>
